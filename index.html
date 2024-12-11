@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Cards</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="add-user-btn">Add User</button>
+      <div id="cards-container" class="cards-container"></div>
+    </div>
+
+    <div class="modal hidden">
+      <div class="modal-content">
+        <h2>Add User</h2>
+        <form class="user-form">
+          <input type="text" class="name" placeholder="name" required />
+          <input type="text" class="role" placeholder="profession" required />
+          <select class="gender" required>
+            <option value="" disabled selected>Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+          <input
+            type="text"
+            class="university"
+            placeholder="university"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
